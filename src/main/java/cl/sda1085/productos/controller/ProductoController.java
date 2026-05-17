@@ -21,7 +21,10 @@ public class ProductoController {
     //Conexión con 'service'
     private final ProductoService productoService;
 
+
+    //------------------------------
     //CRUD estándar
+    //------------------------------
 
     //Obtener todos los productos
     @GetMapping
@@ -62,7 +65,9 @@ public class ProductoController {
     }
 
 
+    //------------------------------
     //CRUD personalizado
+    //------------------------------
 
     //Buscar producto por nombre
     @GetMapping("/buscar/{nombre}")

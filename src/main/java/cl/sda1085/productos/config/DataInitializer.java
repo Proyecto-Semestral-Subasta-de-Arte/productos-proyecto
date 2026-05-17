@@ -41,7 +41,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("150000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/vasija.jpg",
-                100L,
+                3L,
                 1L);
 
         Producto p2 = new Producto(
@@ -55,7 +55,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("300000.00"),
                 "VALIDADO",
                 "https://ejemplo.com/espada.jpg",
-                101L,
+                2L,
                 2L);
 
         Producto p3 = new Producto(
@@ -69,7 +69,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("500000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/pintura.jpg",
-                102L,
+                1L,
                 3L);
 
         Producto p4 = new Producto(
@@ -83,8 +83,10 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("220000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/mascara.jpg",
-                103L,
+                2L,
                 1L);
+
+        //Categoría equivalente más cercana; ya que no existe, se puede hacer POST en 'categorías' y crearla.
 
         Producto p5 = new Producto(
                 null,
@@ -97,7 +99,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("400000.00"),
                 "VALIDADO",
                 "https://ejemplo.com/reloj.jpg",
-                104L,
+                5L,
                 2L);
 
         Producto p6 = new Producto(
@@ -111,7 +113,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("350000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/escultura.jpg",
-                105L,
+                7L,
                 3L);
 
         Producto p7 = new Producto(
@@ -125,8 +127,10 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("180000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/libro.jpg",
-                106L,
+                6L,
                 1L);
+
+        //Categoría equivalente más cercana; ya que no existe, se puede hacer POST en 'categorías' y crearla.
 
         Producto p8 = new Producto(
                 null,
@@ -139,7 +143,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("270000.00"),
                 "VALIDADO",
                 "https://ejemplo.com/moneda.jpg",
-                107L,
+                4L,
                 2L);
 
         Producto p9 = new Producto(
@@ -153,7 +157,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("600000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/jarron.jpg",
-                108L,
+                3L,
                 3L);
 
         Producto p10 = new Producto(
@@ -167,8 +171,10 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("210000.00"),
                 "VALIDADO",
                 "https://ejemplo.com/camara.jpg",
-                109L,
+                5L,
                 2L);
+
+        //Categoría equivalente más cercana; ya que no existe, se puede hacer POST en 'categorías' y crearla.
 
         Producto p11 = new Producto(
                 null,
@@ -181,7 +187,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("520000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/tapiz.jpg",
-                110L,
+                1L,
                 1L);
 
         Producto p12 = new Producto(
@@ -195,8 +201,10 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("310000.00"),
                 "VALIDADO",
                 "https://ejemplo.com/anillo.jpg",
-                111L,
+                1L,
                 2L);
+
+        //Categoría equivalente más cercana; ya que no existe, se puede hacer POST en 'categorías' y crearla.
 
         Producto p13 = new Producto(
                 null,
@@ -209,7 +217,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("450000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/mapa.jpg",
-                112L,
+                6L,
                 3L);
 
         Producto p14 = new Producto(
@@ -223,7 +231,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("800000.00"),
                 "VALIDADO",
                 "https://ejemplo.com/armadura.jpg",
-                113L,
+                6L,
                 2L);
 
         Producto p15 = new Producto(
@@ -237,7 +245,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("260000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/cajamusical.jpg",
-                114L,
+                8L,
                 1L);
 
         Producto p16 = new Producto(
@@ -251,7 +259,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("190000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/lampara.jpg",
-                115L,
+                8L,
                 3L);
 
         Producto p17 = new Producto(
@@ -265,7 +273,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("670000.00"),
                 "VALIDADO",
                 "https://ejemplo.com/busto.jpg",
-                116L,
+                7L,
                 2L);
 
         Producto p18 = new Producto(
@@ -279,7 +287,7 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("340000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/espejo.jpg",
-                117L,
+                8L,
                 1L);
 
         Producto p19 = new Producto(
@@ -293,8 +301,10 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("230000.00"),
                 "VALIDADO",
                 "https://ejemplo.com/pluma.jpg",
-                118L,
+                8L,
                 3L);
+
+        //Categoría equivalente más cercana; ya que no existe, se puede hacer POST en 'categorías' y crearla.
 
         Producto p20 = new Producto(
                 null,
@@ -307,11 +317,13 @@ public class DataInitializer implements CommandLineRunner {
                 new BigDecimal("380000.00"),
                 "PENDIENTE",
                 "https://ejemplo.com/baul.jpg",
-                119L,
+                8L,
                 2L);
 
+
+        //Lista de productos
         productoRepository.saveAll(List.of(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10,
-                                            p11,p12,p13,p14,p15,p16,p17,p18,p19,p20));
+                                            p11, p12, p13, p14, p15, p16, p17, p18, p19, p20));
 
         log.info("Productos creados correctamente");
     }
