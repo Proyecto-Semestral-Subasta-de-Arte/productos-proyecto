@@ -35,9 +35,7 @@ public class ProductoController {
     //Obtener producto por ID
     @GetMapping("/{id}")
     public ResponseEntity<ProductoResponseDTO> obtenerPorId(@PathVariable Long id){
-        return productoService.obtenerPorId(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        return ResponseEntity.ok(productoService.obtenerPorId(id));
     }
     //Crear (guardar) nuevo producto
     @PostMapping
@@ -52,9 +50,7 @@ public class ProductoController {
             @PathVariable Long id,
             @Valid @RequestBody ProductoRequestDTO dto) {
 
-        return productoService.actualizar(id, dto)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        return ResponseEntity.ok(productoService.actualizar(id, dto));
     }
 
     // Eliminar
@@ -71,7 +67,7 @@ public class ProductoController {
 
     //Buscar producto por nombre
     @GetMapping("/buscar/{nombre}")
-    public ResponseEntity<List<ProductoResponseDTO>> buscarPorNombre(@RequestParam String nombre){
+    public ResponseEntity<List<ProductoResponseDTO>> buscarPorNombre(@PathVariable String nombre){
         return ResponseEntity.ok(productoService.buscarPorNombre(nombre));
     }
 
@@ -84,13 +80,11 @@ public class ProductoController {
     //Buscar el producto más caro del catálogo
     @GetMapping("/destacado/mas-caro")
     public ResponseEntity<ProductoResponseDTO> obtenerProductoMasCaro(){
-        return productoService.obtenerProductoMasCaro()
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        return ResponseEntity.ok(productoService.obtenerProductoMasCaro());
     }
 
     //Verificar duplicados de producto para un mismo vendedor
-    @GetMapping("/validar/duplicado")
+    @GetMapping("/verificar-duplicado")
     public ResponseEntity<Boolean> verificarDuplicado(
             @RequestParam String nombre,
             @RequestParam Long idVendedor){
